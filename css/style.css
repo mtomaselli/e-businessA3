@@ -72,9 +72,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
+h7{
+color: #fff;
+font-size: 2rem; 
+margin-bottom: 0.5rem;
+  font-family: inherit; }
+ 
+
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
+
+p1 {
+  color: #fff;
+  Font: 15px Poppins, Arial, sans-serif;
+  margin: 0px 0px 16px; }
+
+
+
 
 abbr[title],
 abbr[data-original-title] {
