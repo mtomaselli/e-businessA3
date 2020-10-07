@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="scripts/simplecartjs/simpleCart.js" async></script>
+	<script src="scripts/simplecartjs/simpleCart.js"></script>
+	<script src="scripts/simplecartjs-config.js"></script>
+
 	<title>Cuisine Hampers | Checkout</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -279,7 +282,7 @@
 									<div class="form-group">
 										<div class="col-md-12">
 											<div class="checkbox">
-											   <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+											   <label><input type="checkbox" value="" class="mr-2" required> I have read and accept the terms and conditions</label>
 											</div>
 										</div>
 									</div>
@@ -287,7 +290,7 @@
 										<br />
 										<br />
 										<br />  
-										<a class="btn btn-primary py-3 px-4" type="submit" href="javascript:;">Place Order</a>
+										<a class="simpleCart_checkout button btn btn-primary py-3 px-4"  href="javascript:;" >Place Order</a>
 										
 									</p>
 								</div>
