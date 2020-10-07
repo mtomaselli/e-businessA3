@@ -94,8 +94,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-7 ftco-animate">
-						<form action="#" class="billing-form">
-							<h3 class="mb-4 billing-heading">Billing Details</h3>
+			<form action="" class="billing-form" method="POST">
+				<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
 	                <div class="form-group">
@@ -168,10 +168,69 @@
                 <div class="w-100"></div>
                 <div class="col-md-12">
                 	<div class="form-group mt-4">
+							<h3 class="mb-4 billing-heading">Payment Details</h3>
+	          	<div class="row align-items-end">
+                <div class="w-100"></div>
+		            <div class="col-md-12">
+		            	<div class="form-group">
+							<div class="select-wrap">
+
+							<p>
+								<input type="radio" id="cc_mastercard" name="cc_type" value="mastercard" />
+								<label for="cc_mastercard">Mastercard</label>
+								
+								
+								<input type="radio" id="cc_visa" name="cc_type" value="visa" />
+								<label for="cc_visa">Visa</label>
+								
+								
+								<input type="radio" id="cc_amex" name="cc_type" value="amex" />
+								<label for="cc_amex">American Express</label>
+								</p>
+		                </div>
+		            	</div>
+		            </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="credit_card_name">Card Name</label>
+	                  <input type="text" class="form-control" placeholder="John H Smith" id="credit_card_name">
+	                </div>
+		            </div>
+		            <div class="col-md-6">
+		            	<div class="form-group">
+	                	<label for="credit_card_number">Card Number</label>
+	                  <input type="text" class="form-control" placeholder="1111 2222 3333 4444" id="credit_card_number">
+	                </div>
+		            </div>
+		            <div class="col-md-2">
+		            	<div class="form-group">
+                        <label for="month">MM</label>
+	                  <input type="text" class="form-control" placeholder="12" id="card_month">
+	                </div>
+                    </div>
+                    <div class="col-md-2">
+		            	<div class="form-group">
+                        <label for="year">YY</label>
+	                  <input type="text" class="form-control" placeholder="20" id="card_year">
+	                </div>
+                    </div>
+                    <div class="col-md-2">
+		            	<div class="form-group">
+                        <label for="CVV">CVV</label>
+	                  <input type="text" class="form-control" placeholder="345" id="credit_card_security_code">
+	                </div>
+		            </div>
+		            <div class="w-100"></div>
+                <div class="col-md-12">
+                	<div class="form-group mt-4">
 										<div class="radio">
 										  <label class="mr-3"><input type="radio" name="optradio"> Create an Account? </label>
 										 
 										</div>
+									</div>
+                </div>
+	            </div>
 									</div>
                 </div>
 	            </div>
@@ -206,9 +265,7 @@
 	          			<h3 class="billing-heading mb-4">Payment Method</h3>
 									<div class="form-group">
 										<div class="col-md-12">
-											<div class="radio">
-											   <label><input type="radio" name="optradio" class="mr-2"> Credit Card</label>
-											</div>
+											<label><input type="text">Please review your order</label>
 										</div>
 									</div>
 									<div class="form-group">
@@ -221,7 +278,7 @@
 											</div>
 										</div>
 									</div>
-									<p><a href="payment.html"class="btn btn-primary py-3 px-4">Payment Details</a></p>
+									<p> <br /> <br /> <br />  <a href="javascript:;"class="btn btn-primary py-3 px-4">Place Order</a></p>
 								</div>
 	          	</div>
 	          </div>
