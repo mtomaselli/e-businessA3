@@ -52,14 +52,14 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">CuisineHampers</a> <img src="images/globe.png" alt="">
+	      <a class="navbar-brand" href="index.php">CuisineHampers</a> <img src="images/globe.png" alt="">
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -84,9 +84,57 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
           	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
-            <h1>Thankyou for your purchase</h1>
+			<h1>Thankyou for your purchase</h1>
+			<h5> check your email for a confirmation<h5>
             <h5>Order Number: #140038992</h5>
-            <h5>Summary</h5>
+			<h5>Order Summary</h5>
+			
+            <div> <h5><?php
+ $fname = htmlspecialchars($_POST["first_name"]);
+ $lname = htmlspecialchars($_POST["last_name"]);
+ $address = htmlspecialchars($_POST["address"]);
+ $state = htmlspecialchars($_POST["state"]);
+ $city = htmlspecialchars($_POST["city"]);
+ $postcode = (int) $_POST["postcode"];
+ $number = htmlspecialchars($_POST["number"]);
+ $email = htmlspecialchars($_POST["email"]);
+
+ echo "Name: " . $fname . "<br />";
+ echo "Surname: " . $lname . "<br />";
+ echo "Email: " . $email . "<br />";
+ echo "number: " . $number . "<br />";
+ echo "address: " . $address . "<br />";
+ echo "state: " . $state . "<br />";
+ echo "city: " . $city . "<br />";
+ echo "postcode: " . $postcode . "<br />";
+
+?>
+<h5>
+</div>
+
+			<section class="ftco-section ftco-cart">
+				<div class="container">
+				<div class="row justify-content-center">
+					
+					
+					<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+						<div class="cart-total mb-3">
+							<h3>Cart Totals</h3>
+							<p class="d-flex">
+								<span><b>Subtotal</b></span>
+								<span><div class="simpleCart_total"></div></span>
+							</p>
+							<p class="d-flex">
+								<span>Delivery</span>
+								<span> $0.00 (COVID special)</span>
+							</p>
+							<hr>
+							<p class="d-flex total-price">
+								<span><b>Total</b></span>
+								<span><div class="simpleCart_total"></div></span>
+							</p>
+						</div>
+			
           </div>
         </div>
       </div>
@@ -256,4 +304,3 @@
 		});
 	</script>
     
-  </body>

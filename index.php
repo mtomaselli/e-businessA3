@@ -3,6 +3,8 @@
   <head>
 	<title>Cuisine Hampers | Home</title>
 	<?php include('login.php'); ?>
+
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -52,14 +54,14 @@
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	<div class="container">
-	  <a class="navbar-brand" href="index.html">Cuisine Hampers</a> <img src="images/globe.png" alt="">
+	  <a class="navbar-brand" href="index.php">Cuisine Hampers</a> <img src="images/globe.png" alt="">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="oi oi-menu"></span> Menu
 	  </button>
 
 	  <div class="collapse navbar-collapse" id="ftco-nav">
 		<ul class="navbar-nav ml-auto">
-		  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+		  <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
 		  <li class="nav-item active dropdown">
 		  <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
 		  <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -69,10 +71,9 @@
 		  </div>
 		</li>
 		  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-		  <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+		  <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
 		  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-		  <li class="nav-item"><a href="logout.php"class="nav-link">logout</a></li>
-		  <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+		  <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[<span class="simpleCart_quantity"></span>]</a></li>
 
 		</ul>
 	  </div>
@@ -114,56 +115,25 @@
 	    </div>
     </section>
 
-    <section class="ftco-section">
-			<div class="container">
-				<div class="row no-gutters ftco-services">
-          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services mb-md-0 mb-4">
-              <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
-            		<span class="flaticon-shipped"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Free Shipping</h3>
-                <span>On order over $100</span>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services mb-md-0 mb-4">
-              <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
-            		<span class="flaticon-diet"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Always Fresh</h3>
-                <span>Product well package</span>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services mb-md-0 mb-4">
-              <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
-            		<span class="flaticon-award"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Superior Quality</h3>
-                <span>Quality Products</span>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services mb-md-0 mb-4">
-              <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
-            		<span class="flaticon-customer-service"></span>
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Support</h3>
-                <span>24/7 Support</span>
-              </div>
-            </div>      
-          </div>
-        </div>
+	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+		<div class="container py-4">
+		  <div class="row d-flex justify-content-center py-5">
+			<div class="col-md-6">
+				<h2 style="font-size: 22px;" class="mb-0">Subcribe for great Deals!</h2>
+				<span>Get e-mail updates about our latest shops and special offers</span>
 			</div>
-		</section>
+			<div class="col-md-6 d-flex align-items-center">
+			  <form action="subscribe.html" class="subscribe-form">
+				<div class="form-group d-flex">
+				  <input type="email" class="form-control" placeholder="Enter email address">
+				  <input type="text" class="form-control" placeholder="Enter name" required>
+				  <input type="submit" value="Subscribe" class="submit px-3">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	</section>
 
 		<section class="ftco-section ftco-category ftco-no-pt">
 			<div class="container">
@@ -182,12 +152,12 @@
 							<div class="col-md-6">
 								<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end fadeInUp ftco-animated" style="background-image: url(images/oc1.jpg);">
 									<div class="text px-3 py-1">
-										<h2 class="mb-0"><a href="#">Oceania</a></h2>
+										<h2 class="mb-0"><a href="oceania.html">Oceania</a></h2>
 									</div>
 								</div>
 								<div class="category-wrap ftco-animate img d-flex align-items-end fadeInUp ftco-animated" style="background-image: url(images/na1.jpg);">
 									<div class="text px-3 py-1">
-										<h2 class="mb-0"><a href="#">America</a></h2>
+										<h2 class="mb-0"><a href="northamerica.html">America</a></h2>
 									</div>
 								</div>
 							</div>
@@ -197,12 +167,12 @@
 					<div class="col-md-4">
 						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end fadeInUp ftco-animated" style="background-image: url(images/eu1.jpg);">
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="#">Europe</a></h2>
+								<h2 class="mb-0"><a href="europe.html">Europe</a></h2>
 							</div>		
 						</div>
 						<div class="category-wrap ftco-animate img d-flex align-items-end fadeInUp ftco-animated" style="background-image: url(images/me1.jpg);">
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="#">Middle East</a></h2>
+								<h2 class="mb-0"><a href="middle-east.html">Middle East</a></h2>
 							</div>
 						</div>
 					</div>
@@ -322,7 +292,7 @@
 	    								<span><i class="ion-ios-menu"></i></span>
 	    							</a>
 	    							<a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
-	    								<span><i class="ion-ios-cart"></i></span>
+	    		S						<span><i class="ion-ios-cart"></i></span>
 	    							</a>
 	    						
     							</div>
@@ -338,11 +308,13 @@
     	<div class="container">
 				<div class="row justify-content-end">
           <div class="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate fadeInUp ftco-animated">
-          
-            <h2>COVID-19</h2>
-            <p1>At Cuisine Hampers, we understand how hard it is to connect with those close to us at this time, which is why during the pandemic delivery is on us. Use code below at checkout for free delivery. </p1>
-            <h3><a href="#">COVIDFREE</a></h3>
-            <p1> thank you and stay safe!</p1>
+		  <div>	
+			  <h7 class="mb-0 bread">COVID-19 ANNOUNCEMENT</h7>
+		</div>
+		
+            <p1>At Cuisine Hampers, we understand how hard it is to connect with those close to us at this time, which is why during the pandemic delivery is on us. All products will be shipped free of cost. </p1>
+
+            <p1> Thank you and stay safe!</p1>
          
           </div>
         </div>   		
@@ -439,46 +411,59 @@
 
     <hr>
 
-		<section class="ftco-section ftco-partner">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-1.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-2.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-3.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-4.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    			<div class="col-sm ftco-animate">
-    				<a href="#" class="partner"><img src="images/partner-5.png" class="img-fluid" alt="Colorlib Template"></a>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+	
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row no-gutters ftco-services">
+	  <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services mb-md-0 mb-4">
+		  <div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+				<span class="flaticon-shipped"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Fast Shipping</h3>
+			<span>Safe and reliable postage</span>
+		  </div>
+		</div>      
+	  </div>
+	  <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services mb-md-0 mb-4">
+		  <div class="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
+				<span class="flaticon-diet"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Always Fresh</h3>
+			<span>Product well package</span>
+		  </div>
+		</div>    
+	  </div>
+	  <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services mb-md-0 mb-4">
+		  <div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+				<span class="flaticon-award"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Superior Quality</h3>
+			<span>Quality Products</span>
+		  </div>
+		</div>      
+	  </div>
+	  <div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+		<div class="media block-6 services mb-md-0 mb-4">
+		  <div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+				<span class="flaticon-customer-service"></span>
+		  </div>
+		  <div class="media-body">
+			<h3 class="heading">Support</h3>
+			<span>24/7 Support</span>
+		  </div>
+		</div>      
+	  </div>
+	</div>
+		</div>
+	</section>
 
-		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-      <div class="container py-4">
-        <div class="row d-flex justify-content-center py-5">
-          <div class="col-md-6">
-          	<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-          	<span>Get e-mail updates about our latest shops and special offers</span>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <form action="#" class="subscribe-form">
-              <div class="form-group d-flex">
-                <input type="text" class="form-control" placeholder="Enter email address">
-                <input type="submit" value="Subscribe" class="submit px-3">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+		
     <footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row">
@@ -504,10 +489,10 @@
 			  <div class="ftco-footer-widget mb-4 ml-md-5">
 				<h2 class="ftco-heading-2">Menu</h2>
 				<ul class="list-unstyled">
-				  <li><a href="#" class="py-2 d-block">Shop</a></li>
-				  <li><a href="#" class="py-2 d-block">About</a></li>
-				  <li><a href="#" class="py-2 d-block">Journal</a></li>
-				  <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+					<li><a href="shop.html" class="py-2 d-block">Shop</a></li>
+					<li><a href="about.html" class="py-2 d-block">About</a></li>
+					<li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
+					<li><a href="sitemap.html" class="py-2 d-block">Sitemap</a></li>
 				</ul>
 			  </div>
 			</div>
@@ -530,7 +515,7 @@
 			</div>
 			<div class="col-md">
 			  <div class="ftco-footer-widget mb-4">
-				  <h2 class="ftco-heading-2">Have a Questions?</h2>
+				  <h2 class="ftco-heading-2">Have a Question?</h2>
 				  <div class="block-23 mb-3">
 					<ul>
 					  <li><span class="icon icon-map-marker"></span><span class="text">30 Collin Street, Melbourne, Australia, 3004</span></li>
@@ -544,14 +529,13 @@
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  </p>
+			<p>Cusine Hampers is not a real website but designed by rmit students for assignments A2 and A3.
+			</p>
+						  
 			</div>
 		  </div>
 		</div>
-	  </footer>
+	</footer>
     
   
 

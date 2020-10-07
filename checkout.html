@@ -55,14 +55,14 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">CuisineHampers</a> <img src="images/globe.png" alt="">
+	      <a class="navbar-brand" href="index.php">CuisineHampers</a> <img src="images/globe.png" alt="">
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
 	          <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -86,7 +86,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Checkout</span></p>
+          
             <h1 class="mb-0 bread">Checkout</h1>
           </div>
         </div>
@@ -99,19 +99,20 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-7 ftco-animate">
-			<form action="form-handling-page" class="billing-form" method="POST">
+
+			<form action="orderconfirmed.php" class="billing-form" method="POST">
 				<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="fname">First Name</label>
-	                  <input type="text" class="form-control" placeholder="" id="fname" required>
+	                  <input type="text" class="form-control" placeholder="" id="fname" name="first_name"required>
 	                </div>
 	              </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="lname">Last Name</label>
-	                  <input type="text" class="form-control" placeholder="" id="lname">
+	                  <input type="text" class="form-control" placeholder="" id="lname" name="last_name">
 	                </div>
                 </div>
                 <div class="w-100"></div>
@@ -119,16 +120,9 @@
 		            	<div class="form-group">
 		            		<label for="country">State</label>
 		            		<div class="select-wrap">
-		                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-		                  <select name="" id="address_state_province" class="form-control">
-		                  	<option value="">Victoria</option>
-		                    <option value="">New South Wales</option>
-		                    <option value="">Western Australia</option>
-		                    <option value="">South Australia</option>
-		                    <option value="">Queensland</option>
-							<option value="">Tasmania</option>
-							<option value="">Northern Territory</option>
-		                  </select>
+		                
+		                  <input type="text" class="form-control" placeholder="" id="State" name="state">
+		                  
 		                </div>
 		            	</div>
 		            </div>
@@ -136,7 +130,7 @@
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="address_street_1">Street Address</label>
-	                  <input type="text" class="form-control" placeholder="House number and street name" id="address_street_1">
+	                  <input type="text" class="form-control" placeholder="House number and street name" id="address_street_1" name="address">
 	                </div>
 		            </div>
 		            <div class="col-md-6">
@@ -148,26 +142,26 @@
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="towncity">City</label>
-	                  <input type="text" class="form-control" placeholder="" id="address_city">
+	                  <input type="text" class="form-control" placeholder="" id="address_city" name="city" required>
 	                </div>
 		            </div>
 		            <div class="col-md-6">
 		            	<div class="form-group">
 		            		<label for="postcodezip">Postcode</label>
-	                  <input type="text" class="form-control" placeholder="" id="postal_code">
+	                  <input type="number" class="form-control" placeholder="" id="postal_code" name="postcode" required>
 	                </div>
 		            </div>
 		            <div class="w-100"></div>
 		            <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="phone_number">Phone Number</label>
-	                  <input type="text" class="form-control" placeholder="" id="phone_number">
+	                  <input type="number" class="form-control" placeholder="" id="phone_number" name="number" required>
 	                </div>
 	              </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="email_address">Email Address</label>
-	                  <input type="text" class="form-control" placeholder="" id="email_address">
+	                  <input type="email" class="form-control" placeholder="" id="email_address" name="email" required>
 	                </div>
                 </div>
                 <div class="w-100"></div>
@@ -199,31 +193,31 @@
                     <div class="col-md-12">
 		            	<div class="form-group">
 	                	<label for="credit_card_name">Card Name</label>
-	                  <input type="text" class="form-control" placeholder="John H Smith" id="credit_card_name">
+	                  <input type="text" class="form-control" placeholder="John H Smith" id="credit_card_name" required>
 	                </div>
 		            </div>
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="credit_card_number">Card Number</label>
-	                  <input type="text" class="form-control" placeholder="1111 2222 3333 4444" id="credit_card_number">
+	                  <input type="number" class="form-control" placeholder="1111 2222 3333 4444" id="credit_card_number" required>
 	                </div>
 		            </div>
 		            <div class="col-md-2">
 		            	<div class="form-group">
                         <label for="month">MM</label>
-	                  <input type="text" class="form-control" placeholder="12" id="card_month">
+	                  <input type="number" class="form-control" placeholder="12" id="card_month" required>
 	                </div>
                     </div>
                     <div class="col-md-2">
 		            	<div class="form-group">
                         <label for="year">YY</label>
-	                  <input type="text" class="form-control" placeholder="20" id="card_year">
+	                  <input type="text" class="form-control" placeholder="20" id="card_year" required>
 	                </div>
                     </div>
                     <div class="col-md-2">
 		            	<div class="form-group">
                         <label for="CVV">CVV</label>
-	                  <input type="text" class="form-control" placeholder="345" id="credit_card_security_code">
+	                  <input type="text" class="form-control" placeholder="345" id="credit_card_security_code" required>
 	                </div>
 		            </div>
 		            <div class="w-100"></div>
@@ -238,8 +232,9 @@
 	            </div>
 									</div>
                 </div>
-	            </div>
-	          </form><!-- END -->
+				</div>
+				
+	          
 					</div>
 					<div class="col-xl-5">
 	          <div class="row mt-5 pt-3">
@@ -283,7 +278,8 @@
 										<br />
 										<br />
 										<br />  
-										<a class="simpleCart_checkout button btn btn-primary py-3 px-4"  href="javascript:;" >Place Order</a>
+										<button type="submit" class="" >Place Order></button>
+									</form><!-- END -->
 										
 									</p>
 								</div>
