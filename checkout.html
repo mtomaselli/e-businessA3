@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cuisine Hampers | Checkout</title>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="scripts/simplecartjs/simpleCart.js"></script>
+	<script src="scripts/simplecartjs-config.js"></script>
+
+	<title>Cuisine Hampers | Checkout</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -26,7 +31,10 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/valid.css">
+	
+
   </head>
   <body class="goto-here">
 	<div class="py-1 bg-primary">
@@ -94,13 +102,13 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-7 ftco-animate">
-			<form action="" class="billing-form" method="POST">
+			<form action="form-handling-page" class="billing-form" method="POST">
 				<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="fname">First Name</label>
-	                  <input type="text" class="form-control" placeholder="" id="fname">
+	                  <input type="text" class="form-control" placeholder="" id="fname" required>
 	                </div>
 	              </div>
 	              <div class="col-md-6">
@@ -240,7 +248,7 @@
 	          <div class="row mt-5 pt-3">
 	          	<div class="col-md-12 d-flex mb-5">
 	          		<div class="cart-detail cart-total p-3 p-md-4">
-	          			<h3 class="billing-heading mb-4">Cart Total</h3>
+	          			<h3 class="billing-heading mb-4">Cart Summary</h3>
 	          			<p class="d-flex">
 		    						<span>Subtotal</span>
 		    						<span>$20.60</span>
@@ -274,11 +282,17 @@
 									<div class="form-group">
 										<div class="col-md-12">
 											<div class="checkbox">
-											   <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+											   <label><input type="checkbox" value="" class="mr-2" required> I have read and accept the terms and conditions</label>
 											</div>
 										</div>
 									</div>
-									<p> <br /> <br /> <br />  <a href="javascript:;"class="btn btn-primary py-3 px-4">Place Order</a></p>
+									<p> 
+										<br />
+										<br />
+										<br />  
+										<a class="simpleCart_checkout button btn btn-primary py-3 px-4"  href="javascript:;" >Place Order</a>
+										
+									</p>
 								</div>
 	          	</div>
 	          </div>
@@ -399,8 +413,6 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
   <script>
