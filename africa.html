@@ -70,9 +70,9 @@
               </div>
             </li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[<span class="simpleCart_quantity"></span>]</a></li>
 
 	        </ul>
 	      </div>
@@ -91,13 +91,13 @@
     </div>
 
     <section class="ftco-section">
-    	<div class="container">
+    	<div class="container simpleCart_shelfItem">
     		<div class="row">
     			<div class="col-lg-6 mb-5 ftco-animate">
     				<a href="images/af1.jpg" class="image-popup"><img src="images/af1.jpg" class="img-fluid" alt="Colorlib Template"></a>
     			</div>
     			<div class="col-lg-6 product-details pl-md-5 ftco-animate">
-    				<h3>Africa Hamper</h3>
+    				<h3 class="item_name">Africa Hamper</h3>
     				<div class="rating d-flex">
 							<p class="text-left mr-4">
 								<a href="#" class="mr-2">5.0</a>
@@ -114,12 +114,14 @@
 								<a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Sold</span></a>
 							</p>
 						</div>
-    				<p class="price"><span>$120.00</span></p>
+    				<p class="item_price price"><span>$120.00</span></p>
     				<p>Treat yourself and your friends with various items from the African region, get inspired by Egyption recipes, South African delicies and tropical dishes from Cape Verde with this hamper. Try today!
 						</p>
 					<p>The hamper includes items such as recipes, drinks, food, traditional cutlery, regional attire, candles of exotic scents and so much more!</p>
+
+					<p></p><input type="text"value="1"class="item_Quantity"/></p>
 						
-          	<p><a href="cart.html" class="btn btn-black py-3 px-5">Add to Cart</a></p>
+					  <p><a href="javascript;:" class="btn btn-black py-3 px-5 item_add">Add to Cart</a></p>
     			</div>
     		</div>
     	</div>
@@ -245,26 +247,24 @@
     	</div>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
-		<div class="container py-4">
-		  <div class="row d-flex justify-content-center py-5">
-			<div class="col-md-6">
-				<h2 style="font-size: 22px;" class="mb-0">Subcribe for great Deals!</h2>
-				<span>Get e-mail updates about our latest shops and special offers</span>
-			</div>
-			<div class="col-md-6 d-flex align-items-center">
-			  <form action="subscribe.html" class="subscribe-form">
-				<div class="form-group d-flex">
-				  <input type="email" class="form-control" placeholder="Enter email address">
-				  <input type="text" class="form-control" placeholder="Enter name" required>
-				  <input type="submit" value="Subscribe" class="submit px-3">
-				</div>
-			  </form>
-			</div>
-		  </div>
-		</div>
-	</section>
-	
+		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+      <div class="container py-4">
+        <div class="row d-flex justify-content-center py-5">
+          <div class="col-md-6">
+          	<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
+          	<span>Get e-mail updates about our latest shops and special offers</span>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control" placeholder="Enter email address">
+                <input type="submit" value="Subscribe" class="submit px-3">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="ftco-footer ftco-section">
       <div class="container">
       	<div class="row">
@@ -344,6 +344,8 @@
 
 
   <script src="js/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/simpleCart.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

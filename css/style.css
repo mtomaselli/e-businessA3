@@ -9936,6 +9936,10 @@ textarea.form-control {
       .sidebar-box-2 ul li a {
         color: #000000; }
 
+.center-me {
+  margin: 0 auto
+}
+
 #ftco-loader {
   position: fixed;
   width: 96px;
