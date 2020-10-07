@@ -1,3 +1,5 @@
+console.log("hi")
+
 simpleCart.bind( 'beforeCheckout' , function( data ){  
 data.first_name = document.getElementById("fname").value;
 data.last_name = document.getElementById("lname").value;
